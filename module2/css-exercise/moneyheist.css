@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    
+    line-height: 1.5;
+    color: #fff; 
+    background: #1A1E26;
+    background-size : cover; 
+    font-size: 20px;
+}
+img{
+    max-width : 100% ;
+     background-size : cover; 
+    
+}
+
+
+
+
+h1{
+    text-align : center;
+    color : red;
+}
+.column{
+    display:flex;
+}
+
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+    color : white ;
+}
