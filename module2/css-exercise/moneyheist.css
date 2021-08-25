@@ -12,11 +12,9 @@ body {
 }
 img{
     max-width : 100% ;
-     background-size : cover; 
-    
+    background-size : cover; 
 }
-
-
+    
 
 
 h1{
@@ -31,7 +29,7 @@ h1{
 .container {
     width: 800px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 .link{
