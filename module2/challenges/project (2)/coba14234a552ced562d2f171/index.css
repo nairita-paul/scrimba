@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+
+}
+.container{
+    max-width : 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+h1 {
+    background-color: #281B2D;
+    color: #fff;
+    text-align: center;
+    font-size: 72px;
+    margin-top: 0;
+    padding: 25px 0;
+}
+h2 {
+    background-color: #281B2D;
+    color: #FCD801;
+    font-size: 48px ;
+    padding : 20px;
+    margin : 20px;
+    border-bottom: green 5px solid;
+}
+.white-text{
+    color : #fff ;
+}
+
+p{
+    padding-left : 10px ;
+}
+.columns{
+    display : flex;
+    padding : 20px;
+}
+ .sidebar{
+     background : greenyellow;
+ }
+
+a{
+    font-size: 10px;
+}
+
+a:hover{
+    color : #fff;
+    font-size: 10px;
+
+}
