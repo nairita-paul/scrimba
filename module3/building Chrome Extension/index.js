@@ -3,9 +3,19 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn");
+const saveTab = document.getElementById("save-tab");
+
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 console.log(leadsFromLocalStorage);
 localStorage.clear();
+
+const tabs = [{ url: "https://github.com/nairita-paul/" }];
+
+saveTab.addEventListener("click", function () {
+  myLeads.push(tabs[0].url);
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+  render(myLeads);
+});
 
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
