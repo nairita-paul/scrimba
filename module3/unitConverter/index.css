@@ -1,0 +1,16 @@
+body {
+    margin-left: 550px ;
+    margin-top: 20px;
+}
+
+#btn {
+    font-weight: bold;
+}
+
+p {
+    font-weight: normal ;
+}
+
+div {
+    display: center ;
+}
