@@ -1,7 +1,7 @@
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const length = document.getElementById("length");
-const volumn = document.getElementById("volumn");
+const volume = document.getElementById("volume");
 const mass = document.getElementById("mass");
 let meterToFeet = 3.281;
 let litterToGallons = 0.264;
@@ -25,7 +25,7 @@ function convertLength() {
 
 function convertVolumn() {
   let basevalue = input.value;
-  volumn.textContent = ` ${input.value} litter = ${
+  volume.textContent = ` ${input.value} litter = ${
     basevalue * litterToGallons
   } gallon | ${basevalue} gallon = ${(input.value / litterToGallons).toFixed(
     2
