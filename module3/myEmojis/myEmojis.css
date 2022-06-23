@@ -1,0 +1,54 @@
+html {
+    font-family: Baloo;
+    letter-spacing: 2px;
+}
+body {
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(#5DA4D9, #FFF);
+    align-items: center;
+}
+h1 {
+    margin : 50px;
+    text-align: center;
+    color: white; 
+}
+#emoji-container {
+    margin : 40px;
+    font-size: 50px;
+    text-align: center;
+}
+#emoji-container span {
+    margin: 10px;
+    font-size: 40px;
+}
+input {
+    margin: 0 auto;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    border-color: white;
+    border: none;
+    height: 30px;
+}
+button {
+    font-family: Baloo;
+    margin : 5px 10px;
+    font-size: medium;
+    padding: 4px 10px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: darkcyan;
+    border: none;
+    color : white;
+}
+.buttons-wrapper{
+
+    display: flex;
+    justify-content: center;
+    margin : 40px; 
+}
+#pop-btn, #shift-btn{
+   background-color : #E23349;
+}
