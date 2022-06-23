@@ -3,42 +3,38 @@ const btn = document.getElementById("btn");
 const length = document.getElementById("length");
 const volume = document.getElementById("volume");
 const mass = document.getElementById("mass");
-let meterToFeet = 3.281;
-let litterToGallons = 0.264;
-let kilogramToPound = 2.204;
+const meterToFeet = 3.281;
+const litterToGallons = 0.264;
+const kilogramToPound = 2.204;
+
+let basevalue;
 
 function unitConverter() {
+  basevalue = input.value;
   convertLength();
-  convertVolumn();
+  convertVolume();
   convertMass();
 }
 
 function convertLength() {
-  let basevalue = input.value;
-  length.textContent = ` 
-  ${basevalue} meter = ${
-    basevalue * meterToFeet
-  } feet  | ${basevalue} feet = ${(input.value / meterToFeet).toFixed(
-    2
-  )} meter  `;
+  const ftVal = (basevalue * meterToFeet).toFixed(2);
+  const mVal = (basevalue / meterToFeet).toFixed(2);
+
+  const mToFtStr = `${basevalue} meter = ${ftVal} feet`;
+  const ftToMStr = `${basevalue} feet = ${mVal} meter`;
+  length.textContent = `${mToFtStr} | ${ftToMStr}`;
 }
 
-function convertVolumn() {
-  let basevalue = input.value;
-  volume.textContent = ` ${input.value} litter = ${
-    basevalue * litterToGallons
-  } gallon | ${basevalue} gallon = ${(input.value / litterToGallons).toFixed(
-    2
-  )} meter  `;
+function convertVolume() {
+  // prettier-ignore
+  volume.textContent = `${basevalue} litter = ${basevalue * litterToGallons} gallon | 
+  ${basevalue} gallon = ${(basevalue / litterToGallons).toFixed(2)} meter  `;
 }
 
 function convertMass() {
-  let basevalue = input.value;
-  mass.textContent = ` ${input.value} kilo = ${(
+  mass.textContent = ` ${basevalue} kilo = ${(
     basevalue * kilogramToPound
   ).toFixed(2)} pound | ${basevalue} pound = ${(
-    input.value / kilogramToPound
+    basevalue / kilogramToPound
   ).toFixed(2)} meter `;
 }
-
-unitConverter();
