@@ -1,9 +1,12 @@
 html, body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     background-image: url("img/table.png");
+    background-repeat: repeat-y;
+    background-size: contain;
     font-family: "Exo 2", sans-serif;
     height: 100vh;
+    max-width: 425px;
 }
 
 body {
