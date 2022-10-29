@@ -1,7 +1,6 @@
 body{
     margin : 0 auto ;
     width : 50%;
-    letter-spacing: 2rem;
 }
 
 img{
@@ -10,8 +9,6 @@ img{
     height : 50%;
 }
 .container{
-    /* margin : 0 auto ; */
-    border : 1px red solid;
     text-align: center;
 }
 
@@ -19,6 +16,5 @@ img{
     display : flex;
 }
 .column{
-    border : 1px green solid;
     padding : 5px;
 }
