@@ -108,3 +108,7 @@ function generateRandomPassword() {
 }
 let finalPassword = generateRandomPassword();
 console.log("Here is a random password : ", finalPassword);
+
+document.getElementsByTagName(
+  "p"
+)[0].innerHTML = `Random Password: <br>${finalPassword}`;
