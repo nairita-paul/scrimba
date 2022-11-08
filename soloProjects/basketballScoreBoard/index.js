@@ -9,31 +9,20 @@ let guestBtnOne = document.getElementsByClassName("guest-btn-1")[0];
 let guestBtnTwo = document.getElementsByClassName("guest-btn-2")[0];
 let guestBtnThree = document.getElementsByClassName("guest-btn-3")[0];
 
-homeBtnOne.addEventListener("click", function () {
-  homeCount = homeCount + 1;
-  homeScore.innerText = homeCount;
-});
+homeBtnOne.addEventListener("click", () => handleBtnClick(1, "home"));
+homeBtnTwo.addEventListener("click", () => handleBtnClick(2, "home"));
+homeBtnThree.addEventListener("click", () => handleBtnClick(3, "home"));
 
-homeBtnTwo.addEventListener("click", function () {
-  homeCount = homeCount + 2;
-  homeScore.innerText = homeCount;
-});
-homeBtnThree.addEventListener("click", function () {
-  homeCount = homeCount + 3;
-  homeScore.innerText = homeCount;
-});
+guestBtnOne.addEventListener("click", () => handleBtnClick(1, "guest"));
+guestBtnTwo.addEventListener("click", () => handleBtnClick(2, "guest"));
+guestBtnThree.addEventListener("click", () => handleBtnClick(3, "guest"));
 
-guestBtnOne.addEventListener("click", function () {
-  guestCount = guestCount + 1;
-  guestScore.innerText = guestCount;
-});
-
-guestBtnTwo.addEventListener("click", function () {
-  guestCount = guestCount + 2;
-  guestScore.innerText = guestCount;
-});
-
-guestBtnThree.addEventListener("click", function () {
-  guestCount = guestCount + 3;
-  guestScore.innerText = guestCount;
-});
+function handleBtnClick(value, type) {
+  if (type === "home") {
+    homeCount += value;
+    homeScore.innerText = homeCount;
+  } else {
+    guestCount += value;
+    guestScore.innerText = guestCount;
+  }
+}
