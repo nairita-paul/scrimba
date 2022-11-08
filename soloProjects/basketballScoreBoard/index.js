@@ -10,7 +10,7 @@ let guestBtnTwo = document.getElementsByClassName("guest-btn-2")[0];
 let guestBtnThree = document.getElementsByClassName("guest-btn-3")[0];
 
 homeBtnOne.addEventListener("click", function () {
-  homeCount = homeCount + val;
+  homeCount = homeCount + 1;
   homeScore.innerText = homeCount;
 });
 
