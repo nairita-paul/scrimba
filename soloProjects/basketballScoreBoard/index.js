@@ -2,22 +2,27 @@ let homeCount = 0;
 let guestCount = 0;
 let homeScore = document.getElementsByClassName("home-score")[0];
 let guestScore = document.getElementsByClassName("guest-score")[0];
-let homeBtnOne = document.getElementsByClassName("home-btn-1")[0];
-let homeBtnTwo = document.getElementsByClassName("home-btn-2")[0];
-let homeBtnThree = document.getElementsByClassName("home-btn-3")[0];
-let guestBtnOne = document.getElementsByClassName("guest-btn-1")[0];
-let guestBtnTwo = document.getElementsByClassName("guest-btn-2")[0];
-let guestBtnThree = document.getElementsByClassName("guest-btn-3")[0];
 
-homeBtnOne.addEventListener("click", () => handleBtnClick(1, "home"));
-homeBtnTwo.addEventListener("click", () => handleBtnClick(2, "home"));
-homeBtnThree.addEventListener("click", () => handleBtnClick(3, "home"));
+document.addEventListener("click", handleClick);
 
-guestBtnOne.addEventListener("click", () => handleBtnClick(1, "guest"));
-guestBtnTwo.addEventListener("click", () => handleBtnClick(2, "guest"));
-guestBtnThree.addEventListener("click", () => handleBtnClick(3, "guest"));
+function handleClick(event) {
+  const btnId = event.target.dataset.id;
+  if (btnId === "home-btn-1") {
+    handleIncrement(1, "home");
+  } else if (btnId === "home-btn-2") {
+    handleIncrement(2, "home");
+  } else if (btnId === "home-btn-3") {
+    handleIncrement(3, "home");
+  } else if (btnId === "guest-btn-1") {
+    handleIncrement(1, "guest");
+  } else if (btnId === "guest-btn-2") {
+    handleIncrement(2, "guest");
+  } else if (btnId === "guest-btn-3") {
+    handleIncrement(3, "guest");
+  }
+}
 
-function handleBtnClick(value, type) {
+function handleIncrement(value, type) {
   if (type === "home") {
     homeCount += value;
     homeScore.innerText = homeCount;
