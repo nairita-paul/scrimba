@@ -1,5 +1,7 @@
 :root {
   --grey: c6c6c6;
+  --white: #ffffff;
+  --light-grey: #ededed;
 }
 
 html,
@@ -14,6 +16,10 @@ header {
   height: 67px;
   box-sizing: border-box;
   border-bottom: 1px solid var(--grey);
+}
+section {
+  background-color: var(--white);
+  border-bottom: 25px solid var(--light-grey);
 }
 .flex-author-info {
   display: flex;
