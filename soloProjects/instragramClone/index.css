@@ -1,0 +1,73 @@
+:root {
+  --grey: c6c6c6;
+}
+
+html,
+body {
+  margin: auto;
+  padding: 0;
+  width: 375px;
+  font-family: "Blinker", sans-serif;
+}
+
+header {
+  height: 67px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--grey);
+}
+.flex-author-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+}
+
+.insta-avatar {
+  width: 130px;
+  height: 60px;
+}
+.user-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.author-name,
+.author-location {
+  width: 310px;
+  height: 15px;
+  font-size: 13px;
+}
+
+.author-name {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.author-location {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.post-pic {
+  height: 375px;
+  width: 375px;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  margin: 10px 5px;
+}
+.flex-icon {
+  display: flex;
+  justify-content: flex-start;
+}
+.likes {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.post-desc {
+  font-size: 13px;
+}
