@@ -7,7 +7,6 @@
 
   padding-bottom: 0px;
 }
-
 .info_name {
   margin: 0;
   padding: 20px 70px;
@@ -40,4 +39,12 @@
   border-radius: 6px;
   width: 115px;
   height: 34px;
+}
+.linkedin {
+  background-color: #5093e2;
+  color: #ffffff;
+}
+
+.btn_text {
+  margin-left: 12px;
 }

@@ -1,8 +1,9 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import myImage from "../assets/myImage.png";
 import "./Info.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Info() {
   return (
@@ -14,11 +15,11 @@ export default function Info() {
       <div className="info_button_wrap">
         <button className="info_button">
           <FontAwesomeIcon icon={faEnvelope} />
-          Email
+          <span className="btn_text">Email</span>
         </button>
-        <button className="info_button">
-          <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-          LinkedIn
+        <button className="info_button linkedin">
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span className="btn_text">LinkedIn</span>
         </button>
       </div>
     </div>
