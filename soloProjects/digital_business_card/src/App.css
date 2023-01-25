@@ -1,0 +1,13 @@
+body {
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background-color: #23252c;
+}
+
+.container {
+  background-color: #1a1b21;
+  margin: 50px auto 44px auto;
+  width: 315px;
+  border-radius: 10px;
+  overflow: hidden;
+}

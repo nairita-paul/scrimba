@@ -1,0 +1,8 @@
+.footer {
+  margin-top: 24px;
+  background-color: #161619;
+  padding: 19px 73px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}

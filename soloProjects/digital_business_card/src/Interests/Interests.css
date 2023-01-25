@@ -1,0 +1,15 @@
+.interests {
+  padding: 0 36px;
+
+  margin: auto;
+  text-align: left;
+}
+.interests_headline {
+  color: #f5f5f5;
+  font-size: 16px;
+}
+.interests_description {
+  font-size: 10.24px;
+  font-weight: 400;
+  color: #dcdcdc;
+}

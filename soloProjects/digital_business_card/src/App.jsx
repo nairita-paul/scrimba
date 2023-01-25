@@ -1,8 +1,18 @@
-import Info from './Info'
-import './App.css'
+import Info from "./Info/Info";
+import About from "./About/About";
+import Interests from "./Interests/Interests";
+import Footer from "./Footer/Footer";
+import "./App.css";
 
 function App() {
-  return (<Info />)
+  return (
+    <div className="container">
+      <Info />
+      <About />
+      <Interests />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
