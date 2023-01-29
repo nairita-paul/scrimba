@@ -1,0 +1,9 @@
+.nav {
+  padding: 22px 30px;
+  box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001a;
+}
+
+.nav > img {
+  width: 82px;
+  height: 25px;
+}
