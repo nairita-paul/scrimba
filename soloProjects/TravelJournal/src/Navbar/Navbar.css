@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #f55a5a;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.navbar--text {
+  color: #ffffff;
+  font-size: 14.46px;
+}
