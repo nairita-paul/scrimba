@@ -6,7 +6,7 @@ import location_pin from "./assets/location-pin.svg";
 export default [
   {
     title: "Mount Fuji",
-    location: "Japan",
+    country: "Japan",
     googleMapsUrl: "View On Google Maps",
     date: "12 Jan, 2021 - 24 Jan, 2021",
     description:
@@ -16,7 +16,7 @@ export default [
   },
   {
     title: "Sydney Opera House",
-    location: "Australia",
+    country: "Australia",
     googleMapsUrl: "View On Google Maps",
     date: "27 May, 2021 - 8 Jun, 2021",
     description:
@@ -26,7 +26,7 @@ export default [
   },
   {
     title: "Geirangerfjord",
-    location: "Norway",
+    country: "Norway",
     googleMapsUrl: "View On Google Maps",
     date: "01 Oct, 2021 - 18 Nov, 2021",
     description:

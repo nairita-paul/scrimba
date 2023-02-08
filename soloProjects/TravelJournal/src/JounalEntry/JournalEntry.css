@@ -2,42 +2,42 @@
   padding: 45px 40px;
   padding-bottom: 0;
 }
-.hero {
+.entry {
   display: flex;
   align-items: flex-start;
 }
-.hero--right {
+.information {
   padding-left: 19px;
 }
-.hero--right-top {
+.location-meta {
   display: flex;
   align-items: center;
 }
-.hero--right-top-location-pin {
+.location-pin {
   height: 9.54px;
   width: 7px;
 }
-.hero--right-top-location {
+.country {
   font-size: 10.24px;
   letter-spacing: 0.17em;
   padding: 0px 12px 0px 4px;
 }
-.hero--right-top-map {
+.map-link {
   font-size: 10.24px;
   text-decoration-line: underline;
   color: #918e9b;
 }
-.hero--right-title {
+.title {
   padding-top: 0px;
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 8px;
 }
-.hero--right-date {
+.date {
   font-weight: 700;
   font-size: 10.24px;
 }
-.hero--right-details {
+.description {
   font-size: 10.24px;
   line-height: 150%;
 }

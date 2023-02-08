@@ -1,17 +1,17 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Hero from "./Hero/Hero";
+import JournalEntry from "./JounalEntry/JournalEntry";
 import data from "./data";
 
 function App() {
-  const heroSection = data.map((item) => {
-    return <Hero key={item.title} {...item} />;
+  const journalEntries = data.map((item) => {
+    return <JournalEntry key={item.title} {...item} />;
   });
 
   return (
     <div className="container">
       <Navbar />
-      {heroSection}
+      {journalEntries}
     </div>
   );
 }
