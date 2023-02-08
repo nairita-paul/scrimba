@@ -10,7 +10,7 @@ export default function App() {
   });
 
   return (
-    <div class="rity">
+    <div className="rity">
       <Navbar />
       <Hero />
       <section className="cards-list">{cards}</section>
